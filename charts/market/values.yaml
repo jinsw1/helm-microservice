@@ -1,0 +1,10 @@
+# charts/market/values.yaml
+
+replicaCount: 2
+
+image:
+  repository: jinsw1/market-app
+  tag: "1.0"
+  pullPolicy: IfNotPresent
+
+containerPort: 8080
