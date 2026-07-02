@@ -1,25 +1,9 @@
-# 최상위 경로의 values.yaml
+# charts/post/values.yaml
+replicaCount: 2
 
-index-app:
-  replicaCount: 2
-  image:
-    tag: "1.0"
-  service:
-    port: 80
-  containerPort: 80
+image:
+  repository: jinsw1/post-app
+  tag: "1.1"
+  pullPolicy: IfNotPresent
 
-market-app:
-  replicaCount: 2
-  image:
-    tag: "1.0"
-  service:
-    port: 8000
-  containerPort: 8000
-
-post-app:
-  replicaCount: 2
-  image:
-    tag: "1.0"
-  service:
-    port: 8000
-  containerPort: 8000
+containerPort: 8000
