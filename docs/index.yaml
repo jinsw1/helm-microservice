@@ -1,0 +1,27 @@
+apiVersion: v1
+entries:
+  msa-platform:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2026-07-02T09:34:29.980150426+09:00"
+    dependencies:
+    - condition: index-app.enabled
+      name: index-app
+      repository: file://charts/index
+      version: 0.1.0
+    - condition: market-app.enabled
+      name: market-app
+      repository: file://charts/market
+      version: 0.1.0
+    - condition: post-app.enabled
+      name: post-app
+      repository: file://charts/post
+      version: 0.1.0
+    description: index + market + post
+    digest: 4f6eec5fc3dbf25b45f41647a19f7bfd34a50d0786946cb9f416de08ef148786
+    name: msa-platform
+    type: application
+    urls:
+    - https://jinsw1.github.io/helm-microservice/msa-platform-0.1.0.tgz
+    version: 0.1.0
+generated: "2026-07-02T09:34:29.979195167+09:00"
