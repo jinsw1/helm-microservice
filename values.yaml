@@ -16,7 +16,7 @@ market-app:
   service:
     port: 8000
   containerPort: 8000
-  enabled: false
+  enabled: true
 
 post-app:
   replicaCount: 2
